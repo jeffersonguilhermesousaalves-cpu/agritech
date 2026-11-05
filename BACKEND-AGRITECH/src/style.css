@@ -1,0 +1,29 @@
+:root {
+  /* Cores Principais - Tema Agrícola & Bioinsumos */
+  --primary-color: #2e7d32;       /* Verde folha */
+  --secondary-color: #81c784;     /* Verde claro / germinação */
+  --accent-color: #fbc02d;        /* Amarelo colheita */
+  --dark-bg: #1b5e20;             /* Verde escuro */
+  --light-bg: #f4f6f4;            /* Fundo suave */
+  
+  /* Tipografia */
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+  
+  /* Layout e Espaçamentos */
+  --padding-container: 20px;
+  --border-radius: 8px;
+  --shadow-default: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+body {
+  background-color: var(--light-bg);
+  font-size: var(--font-size-base);
+}
