@@ -1,5 +1,7 @@
-const mysql = require('mysql2');
-require('dotenv').config();
+import mysql from 'mysql2';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Configuração da conexão com o MariaDB
 const conexao = mysql.createConnection({
@@ -10,7 +12,7 @@ const conexao = mysql.createConnection({
   database: process.env.DB_NAME || 'agritech'
 });
 
-connection.connect((erro) => {
+conexao.connect((erro) => {
   if (erro) {
     console.error('Erro ao conectar ao MariaDB:', erro.message);
     return;
