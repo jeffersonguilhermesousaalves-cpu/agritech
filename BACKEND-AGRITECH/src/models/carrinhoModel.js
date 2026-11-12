@@ -29,6 +29,7 @@ export const CarrinhoModel = {
       [id_carrinho, id_produto, quantidade]
     );
     return { id_item_carrinho: result.insertId, ...dados };
+    // comentário
   },
 
   async removerItem(id_item_carrinho) {
